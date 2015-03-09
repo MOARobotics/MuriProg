@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MuriProg", "MuriProg\MuriProg.vcxproj", "{372E1B95-6351-491F-B6A4-8FFDA20349CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A107C21C-418A-4697-BB10-20C3AA60E2E4} = {A107C21C-418A-4697-BB10-20C3AA60E2E4}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0746D752-EE77-4590-8704-F274E6827F83}"
+	ProjectSection(SolutionItems) = preProject
+		version.h = version.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hidapi", "HidApi\hidapi.vcxproj", "{A107C21C-418A-4697-BB10-20C3AA60E2E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372E1B95-6351-491F-B6A4-8FFDA20349CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{372E1B95-6351-491F-B6A4-8FFDA20349CD}.Debug|Win32.Build.0 = Debug|Win32
+		{372E1B95-6351-491F-B6A4-8FFDA20349CD}.Release|Win32.ActiveCfg = Release|Win32
+		{372E1B95-6351-491F-B6A4-8FFDA20349CD}.Release|Win32.Build.0 = Release|Win32
+		{A107C21C-418A-4697-BB10-20C3AA60E2E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A107C21C-418A-4697-BB10-20C3AA60E2E4}.Debug|Win32.Build.0 = Debug|Win32
+		{A107C21C-418A-4697-BB10-20C3AA60E2E4}.Release|Win32.ActiveCfg = Release|Win32
+		{A107C21C-418A-4697-BB10-20C3AA60E2E4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = QT v5.4.1
+	EndGlobalSection
+EndGlobal

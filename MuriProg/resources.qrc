@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="MuriProg">
+    <file>Resources/Manual.png</file>
+    <file>Resources/Erase.png</file>
+    <file>Resources/Help.png</file>
+    <file>Resources/Load.png</file>
+    <file>Resources/Program.png</file>
+    <file>Resources/Logo.png</file>
+    <file>Resources/Reset.png</file>
+    <file>Resources/Settings.png</file>
+  </qresource>
+</RCC>

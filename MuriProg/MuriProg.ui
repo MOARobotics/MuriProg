@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MuriProg</class>
+ <widget class="QMainWindow" name="MuriProg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>403</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">MuriProg</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/MuriProg/Resources/Logo.png</normaloff>:/MuriProg/Resources/Logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QPlainTextEdit" name="Output">
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QProgressBar" name="ProgressBar">
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="OutputLabel">
+      <property name="text">
+       <string>Output Log:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="MainMenu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>439</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="FileMenu">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="OpenAction"/>
+    <addaction name="separator"/>
+    <addaction name="ExitAction"/>
+   </widget>
+   <widget class="QMenu" name="MuribotMenu">
+    <property name="title">
+     <string>&amp;Muribot</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="WriteAction"/>
+    <addaction name="EraseAction"/>
+    <addaction name="ResetAction"/>
+    <addaction name="separator"/>
+    <addaction name="SettingsAction"/>
+   </widget>
+   <widget class="QMenu" name="HelpMenu">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="ViewManualAction"/>
+    <addaction name="AboutAction"/>
+   </widget>
+   <addaction name="FileMenu"/>
+   <addaction name="MuribotMenu"/>
+   <addaction name="HelpMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="StatusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>Display Toolbar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="OpenAction"/>
+   <addaction name="separator"/>
+   <addaction name="WriteAction"/>
+   <addaction name="EraseAction"/>
+   <addaction name="ResetAction"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="OpenAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MuriProg/Resources/Load.png</normaloff>:/MuriProg/Resources/Load.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open File</string>
+   </property>
+   <property name="toolTip">
+    <string>Import Firmware Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="ExitAction">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="WriteAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MuriProg/Resources/Program.png</normaloff>:/MuriProg/Resources/Program.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Write Program</string>
+   </property>
+  </action>
+  <action name="AboutAction">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MuriProg/Resources/Help.png</normaloff>:/MuriProg/Resources/Help.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="SettingsAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MuriProg/Resources/Settings.png</normaloff>:/MuriProg/Resources/Settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Settings...</string>
+   </property>
+  </action>
+  <action name="ResetAction">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MuriProg/Resources/Reset.png</normaloff>:/MuriProg/Resources/Reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Reset Muribot</string>
+   </property>
+  </action>
+  <action name="ViewManualAction">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MuriProg/Resources/Manual.png</normaloff>:/MuriProg/Resources/Manual.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;View Manual</string>
+   </property>
+  </action>
+  <action name="EraseAction">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MuriProg/Resources/Erase.png</normaloff>:/MuriProg/Resources/Erase.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Erase Program</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

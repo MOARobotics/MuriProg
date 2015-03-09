@@ -1,0 +1,9 @@
+﻿Build started 3/9/2015 1:26:48 AM.
+     1>Project "C:\Users\Michael\Desktop\MOAR\Code\VS2010\MuriProg\HidApi\hidapi.vcxproj" on node 2 (clean target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\hidapi.lastbuildstate".
+     1>Done Building Project "C:\Users\Michael\Desktop\MOAR\Code\VS2010\MuriProg\HidApi\hidapi.vcxproj" (clean target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.03
